@@ -1,0 +1,175 @@
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  padding: 30px 30px 70px 30px; }
+
+body, td, th {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #777; }
+
+h1 {
+  font-size: 24px;
+  background: url("ico48.png") no-repeat;
+  font-weight: 300;
+  padding: 10px 0 10px 68px;
+  margin: 0; }
+
+h2 {
+  color: #f0a340;
+  margin: 36px 0 6px 70px;
+  font-size: 18px;
+  font-weight: 300; }
+
+h3 {
+  margin: 0 0 0 70px;
+  font-size: 12px;
+  font-weight: 300;
+  max-width: 600px;
+  line-height: 140%; }
+
+h4 {
+  margin: 0 0 12px 0;
+  font-size: 12px;
+  font-weight: 300;
+  max-width: 600px;
+  line-height: 140%; }
+
+.box {
+  padding: 12px 0 0 100px; }
+
+a {
+  color: #1e88ff;
+  cursor: pointer; }
+
+p {
+  margin: 6px 0; }
+
+table {
+  border-collapse: collapse; }
+
+td {
+  margin: 0;
+  padding: 12px;
+  font-weight: 400;
+  text-align: left; }
+
+td b {
+  padding-right: 12px;
+  font-weight: 600;
+  white-space: nowrap; }
+
+td u {
+  margin: 0 6px;
+  font-weight: 800;
+  text-decoration: none;
+  background: #999;
+  color: white;
+  padding: 0 4px;
+  border-radius: 8px; }
+
+td i {
+  display: block;
+  font-size: 11px;
+  max-width: 220px;
+  padding: 0 12px 0 0; }
+
+td:first-child {
+  width: 200px; }
+
+tr {
+  border-bottom: 1px solid #f5f5f5; }
+
+tr tr {
+  border-bottom: none; }
+
+.sticky {
+  margin-right: 6px;
+  user-select: none;
+  font-size: 11px; }
+  .sticky span {
+    background: white;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 8px;
+    padding: 4px 8px;
+    cursor: pointer;
+    white-space: nowrap; }
+  .sticky:hover span {
+    color: #1e88ff;
+    border: 1px solid #1e88ff; }
+  .sticky input:checked + span {
+    color: white;
+    background: #1e88ff;
+    border: 1px solid #1e88ff; }
+  .sticky input {
+    display: none; }
+
+.mousepad {
+  display: inline-block;
+  margin-left: 6px;
+  text-align: center;
+  width: 80px;
+  user-select: none;
+  font-size: 11px;
+  background: #1e88ff;
+  border: 1px solid #1e88ff;
+  color: white;
+  border-radius: 8px;
+  padding: 5px 5px;
+  transition: all 0.2s ease; }
+  .mousepad span {
+    cursor: pointer;
+    white-space: nowrap; }
+  .mousepad:hover {
+    background-color: black; }
+  .mousepad input {
+    display: none; }
+
+.cb {
+  display: block; }
+  .cb span {
+    visibility: hidden;
+    padding-left: 4px; }
+  .cb input:checked + span {
+    color: #1e88ff;
+    visibility: visible; }
+
+.infobox-position td {
+  text-align: center; }
+
+.infobox-position td:first-child {
+  width: auto; }
+
+.infobox-position div {
+  width: 50px;
+  height: 30px;
+  border: 1px solid #1e88ff;
+  position: relative;
+  margin-bottom: 5px; }
+  .infobox-position div span {
+    width: 25px;
+    height: 8px;
+    background: #1e88ff;
+    position: absolute; }
+  .infobox-position div.position0 span {
+    left: 1px;
+    top: 1px; }
+  .infobox-position div.position1 span {
+    right: 1px;
+    top: 1px; }
+  .infobox-position div.position2 span {
+    right: 1px;
+    bottom: 1px; }
+  .infobox-position div.position3 span {
+    left: 1px;
+    bottom: 1px; }
+
+#custom-code {
+  width: 400px;
+  height: 200px;
+  font-family: "Monaco", "UbuntuMono", monospace;
+  font-size: 11px;
+  border: 1px solid #f0f0f0; }

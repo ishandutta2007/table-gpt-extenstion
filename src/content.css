@@ -1,0 +1,61 @@
+body[data-copytables-wait],
+body[data-copytables-wait] * {
+  cursor: wait !important; }
+
+[data-copytables-selected]:not([data-copytables-locked]) {
+  background: Highlight !important;
+  transition: all 0s 0s !important; }
+
+[data-copytables-marked]:not([data-copytables-locked]) {
+  background: Highlight !important;
+  transition: all 0s 0s !important; }
+
+#__copytables_infobox__ {
+  position: fixed;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 65535;
+  background-color: rgba(25, 133, 255, 0.97);
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABo0lEQVR42qRTPUsDQRCdNaIQNCAk5kOxtNEUahI1/oxoKXhgoUGIYOUPELERC4sUgugf0cJGEGuxiCgkmMYU+SC5u911ZvdytxEsNHfs7dvZuTdvZnZZ5ERKGOIZMReHuTcfl7KVwL5q2HOV3wmkIYYxZmwYGNgAARs2hVH6NI7/9/PUqZeCkHqc3X2omRtY298DfB/YfQUO56CJpIeZcujbuTR9AgwQ0jWoHnG4eKgaRfsJWFA7qZeljRmYPQ/pFGwMUVxPghR63s8jxreYT6lB3SG78vGwI0TQhdcDG8qPNb+VzItKJMyMbojaW0vB/OWYVtBzBewsx4GjAmslAVYmCcRvZQjHVd60T3scA5Ct6/BAwdNuB26f64MR5eC5UcrocHk12F6KQ/YqrBW0HQGFdAyEYFBYjOKIgYthyUaYo5yt9DRsEkaCwkIUOp4C1caXegsSE+PQtF1odFwVxUXPRttR2EGGL8JUcEyXfOotG1eTwJQ0C+RNsQZzkTAee+kXq38dlGqptXeR7LPZA6uM3blGl/4FIpK/HGP6meZvAQYAQsLntq6GPGoAAAAASUVORK5CYII=");
+  background-position: 8px center;
+  background-repeat: no-repeat;
+  padding: 0 0 0 32px;
+  transition: opacity 0.2s ease; }
+  #__copytables_infobox__.hidden {
+    opacity: 0; }
+  #__copytables_infobox__[data-position="0"] {
+    left: 0;
+    top: 0;
+    border-bottom-right-radius: 9px; }
+  #__copytables_infobox__[data-position="1"] {
+    right: 0;
+    top: 0;
+    border-bottom-left-radius: 9px; }
+  #__copytables_infobox__[data-position="2"] {
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 9px; }
+  #__copytables_infobox__[data-position="3"] {
+    left: 0;
+    bottom: 0;
+    border-top-right-radius: 9px; }
+  #__copytables_infobox__ b {
+    display: inline-block;
+    margin: 0 1px;
+    padding: 12px 12px 12px 0;
+    font-weight: 200;
+    color: #d1e6ff; }
+    #__copytables_infobox__ b:first-child {
+      border-left: none; }
+    #__copytables_infobox__ b i {
+      font-style: normal;
+      padding-left: 6px;
+      font-weight: 700;
+      color: white; }
+  #__copytables_infobox__ span {
+    background-color: rgba(5, 123, 255, 0.97);
+    color: white;
+    padding: 12px;
+    cursor: pointer; }
