@@ -830,7 +830,7 @@ import './content.css';
             beginCopy: c,
             endCopy: u,
             endCopyFailed: function() {
-                w && console.error("Sorry, Copytables was unable to copy this table."), u()
+                w && console.error("Sorry, TableGPT was unable to copy this table."), u()
             }
         };
     s.main = function() {

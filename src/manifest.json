@@ -41,7 +41,7 @@
             "19": "ico19.png",
             "38": "ico38.png"
         },
-        "default_title": "Copytables",
+        "default_title": "TableGPT",
         "default_popup": "popup.html"
     },
     "options_page": "options.html",
@@ -70,7 +70,7 @@
 
 
     },
-    "name": "Copytables",
+    "name": "TableGPT",
     "version": "0.5.9",
     "homepage_url": "https://merribithouse.net/copytables"
 }
