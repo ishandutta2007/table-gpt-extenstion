@@ -26,8 +26,8 @@ async function runEsbuild() {
     bundle: true,
     outdir: outdir,
     treeShaking: true,
-    minify: true,
-    drop: ['console', 'debugger'],
+    // minify: true,
+    // drop: ['console', 'debugger'],
     legalComments: 'none',
     define: {
       'process.env.NODE_ENV': '"production"',
@@ -73,16 +73,22 @@ async function build() {
   await runEsbuild()
 
   const commonFiles = [
-    { src: 'build/content-script/index.js', dst: 'content-script.js' },
-    { src: 'build/content-script/index.css', dst: 'content-script.css' },
-    { src: 'build/background/index.js', dst: 'background.js' },
-    { src: 'build/options/index.js', dst: 'options.js' },
-    { src: 'build/options/index.css', dst: 'options.css' },
-    { src: 'src/options/index.html', dst: 'options.html' },
-    { src: 'build/popup/index.js', dst: 'popup.js' },
-    { src: 'build/popup/index.css', dst: 'popup.css' },
-    { src: 'src/popup/index.html', dst: 'popup.html' },
+    { src: 'build/content.js', dst: 'content.js' },
+    { src: 'build/content.css', dst: 'content.css' },
+    { src: 'build/background.js', dst: 'background.js' },
+    { src: 'build/options.js', dst: 'options.js' },
+    { src: 'build/options.css', dst: 'options.css' },
+    { src: 'src/options.html', dst: 'options.html' },
+    { src: 'build/popup.js', dst: 'popup.js' },
+    { src: 'build/popup.css', dst: 'popup.css' },
+    { src: 'src/popup.html', dst: 'popup.html' },
     { src: 'src/logo.png', dst: 'logo.png' },
+    { src: 'src/ico16.png', dst: 'ico16.png' },
+    { src: 'src/ico19.png', dst: 'ico19.png' },
+    { src: 'src/ico32.png', dst: 'ico32.png' },
+    { src: 'src/ico38.png', dst: 'ico38.png' },
+    { src: 'src/ico48.png', dst: 'ico48.png' },
+    { src: 'src/ico128.png', dst: 'ico128.png' },
     { src: 'src/_locales', dst: '_locales' },
   ]
 
