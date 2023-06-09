@@ -70,7 +70,9 @@ async function copyFiles(entryPoints, targetDir) {
 
 async function build() {
   await deleteOldDir()
+  console.log('deleteOldDir completed.')
   await runEsbuild()
+  console.log('runEsbuild completed.')
 
   const commonFiles = [
     { src: 'build/content.js', dst: 'content.js' },
@@ -99,6 +101,7 @@ async function build() {
   )
 
   await zipFolder(`./${outdir}/chromium`)
+  console.log('Zipped to chromium.')
 
   // firefox
   await copyFiles(
@@ -107,6 +110,7 @@ async function build() {
   )
 
   await zipFolder(`./${outdir}/firefox`)
+  console.log('Zipped to firefox.')
 
   console.log('Build success.')
 }
