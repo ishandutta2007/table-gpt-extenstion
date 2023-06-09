@@ -1,4 +1,4 @@
-# Spoj Difficulty
+# Table GPT
 
 [link-chrome]: https://chrome.google.com/webstore/detail/cpgpt-competitive-program/cedjhhjppifnfkfkgoflfeddidedofcg?hl=en&authuser=0 'Chrome Web Store'
 
